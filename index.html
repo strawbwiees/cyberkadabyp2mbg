@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CyberKada</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top-of-page">
+  <div class="floaters" aria-hidden="true">
+    <i class="fl" style="--c: var(--sky); --s: 46px; left: 2%; top: 58%; --du: 7s"></i>
+    <i class="fl" style="--c: var(--violet); --s: 34px; left: 17%; top: 8%; --du: 6s; --d: -2s"></i>
+    <i class="fl" style="--c: var(--pink); --s: 40px; left: 80%; top: 10%; --du: 8s; --d: -1s"></i>
+    <i class="fl" style="--c: var(--lime); --s: 52px; left: 93%; top: 56%; --du: 7.5s; --d: -3s"></i>
+    <i class="fl" style="--c: var(--ice); --s: 30px; left: 22%; top: 62%; --du: 6.5s; --d: -4s"></i>
+  </div>
+
+  <div class="wrap">
+    <div class="bar">
+      <a class="seal" href="#top-of-page" aria-label="University of Makati seal">
+        <img src="umak-logo.png" alt="University of Makati seal" width="512" height="512">
+      </a>
+
+      <div class="title">
+        <p class="eyebrow">University of Makati · Cyberkada</p>
+        <h1>Organizational Communication</h1>
+        <span class="sect">2-ACSAD</span>
+      </div>
+
+      <button class="co" id="logo" type="button" aria-label="P squared M B G company logo. Tap to make the blobs bounce.">
+        <svg viewBox="0 0 200 240" aria-hidden="true">
+          <defs>
+            <path id="shp" d="M100 4C80 14 40 22 16 24Q6 25 6 36L6 100C6 160 50 205 100 236C150 205 194 160 194 100L194 36Q194 25 184 24C160 22 120 14 100 4Z"/>
+            <clipPath id="inner"><use href="#shp" transform="translate(100 120) scale(.78) translate(-100 -120)"/></clipPath>
+            <filter id="glow" x="-25%" y="-35%" width="150%" height="170%"><feGaussianBlur stdDeviation="3.4"/></filter>
+            <g id="letters" font-family="Fredoka, 'Baloo 2', 'Arial Rounded MT Bold', system-ui, sans-serif" font-weight="700" font-size="46" text-anchor="middle">
+              <text class="f-sky" x="55" y="144">P</text>
+              <text class="f-violet" x="82" y="144">M</text>
+              <text class="f-pink" x="113" y="144">B</text>
+              <text class="f-lime" x="144" y="144">G</text>
+              <text class="f-sky" x="70" y="113" font-size="21" transform="rotate(-10 70 113)">2</text>
+            </g>
+          </defs>
+
+          <use href="#shp" class="f-paper" stroke="#0b1f3f" stroke-width="8" stroke-linejoin="round"/>
+          <g clip-path="url(#inner)">
+            <rect width="200" height="240" class="f-navy"/>
+            <g class="fp">
+              <ellipse cx="100" cy="128" rx="10" ry="13"/>
+              <ellipse cx="100" cy="128" rx="18" ry="23" stroke-dasharray="60 5 30 6"/>
+              <ellipse cx="100" cy="128" rx="26" ry="33" stroke-dasharray="80 4 40 7"/>
+              <ellipse cx="100" cy="128" rx="34" ry="43" stroke-dasharray="100 6 50 5"/>
+              <ellipse cx="100" cy="128" rx="42" ry="53" stroke-dasharray="120 5 60 8"/>
+              <ellipse cx="100" cy="128" rx="50" ry="63" stroke-dasharray="140 7 70 5"/>
+              <ellipse cx="100" cy="128" rx="58" ry="73" stroke-dasharray="160 5 80 9"/>
+              <ellipse cx="100" cy="128" rx="66" ry="83" stroke-dasharray="180 8 90 6"/>
+              <ellipse cx="100" cy="128" rx="74" ry="93" stroke-dasharray="200 6 100 7"/>
+            </g>
+          </g>
+
+          <!-- five blobs, one per surname initial -->
+          <g transform="translate(55 80)"><g class="bl" style="--i:0"><ellipse rx="9.5" ry="9" class="f-ice"/><circle cx="-3" cy="-1.5" r=".9" class="f-navy"/><circle cx="3" cy="-1.5" r=".9" class="f-navy"/><path class="face-line" d="M-3.2 1.6Q0 4.8 3.2 1.6"/></g></g>
+          <g transform="translate(50.5 91)"><g class="bl" style="--i:1"><ellipse rx="8.8" ry="8.2" class="f-sky"/><circle cx="-3" cy="-1.8" r=".9" class="f-navy"/><circle cx="3" cy="-1.8" r=".9" class="f-navy"/><path class="face-line" d="M-3.2 1.4Q0 4.6 3.2 1.4"/></g></g>
+          <g transform="translate(85 91.5)"><g class="bl" style="--i:2"><ellipse rx="9" ry="8.4" class="f-violet"/><circle cx="-3" cy="-1.8" r=".9" class="f-navy"/><circle cx="3" cy="-1.8" r=".9" class="f-navy"/><path class="face-line" d="M-3.2 1.4Q0 4.6 3.2 1.4"/></g></g>
+          <g transform="translate(114 91.5)"><g class="bl" style="--i:3"><ellipse rx="9" ry="8.4" class="f-pink"/><circle cx="-3" cy="-1.8" r=".9" class="f-navy"/><circle cx="3" cy="-1.8" r=".9" class="f-navy"/><path class="face-line" d="M-3.2 1.4Q0 4.6 3.2 1.4"/></g></g>
+          <g transform="translate(142 91.5)"><g class="bl" style="--i:4"><ellipse rx="9" ry="8.4" class="f-lime"/><circle cx="-3" cy="-1.8" r=".9" class="f-navy"/><circle cx="3" cy="-1.8" r=".9" class="f-navy"/><path class="face-line" d="M-3.2 1.4Q0 4.6 3.2 1.4"/></g></g>
+
+          <use href="#letters" filter="url(#glow)" opacity=".85"/>
+          <use href="#letters"/>
+        </svg>
+      </button>
+    </div>
+
+    
+
+    <!-- Divider: a line from afar, the surnames when zoomed in (filled by script.js) -->
+    <div class="names" id="rule" aria-hidden="true"></div>
+  </div>
+</header>
+
+<!-- ============ STICKY NAV ============ -->
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <div class="pills">
+      <a class="pill" href="#s0" style="--c: var(--ice)"><b>H</b>Home</a>
+      <a class="pill" href="#s1" style="--c: var(--sky)"><b>1</b>Details</a>
+      <a class="pill" href="#s2" style="--c: var(--violet)"><b>2</b>Org chart</a>
+      <a class="pill" href="#s3" style="--c: var(--pink)"><b>3</b>Theory</a>
+      <a class="pill" href="#s4" style="--c: var(--lime)"><b>4</b>Reflection</a>
+      <a class="pill" href="#s5" style="--c: var(--ice)"><b>5</b>Info</a>
+    </div>
+    
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</nav>
+
+<main>
+
+
+  <section class="band" id="s0" style="--c: var(--ice)" aria-labelledby="h0-intro">
+    <div class="wrap sec">
+      <div class="rail-col">
+        <div class="rail">
+          <div class="num">0</div>
+          <div>
+            <h2 id="h0-intro">Introduction</h2>
+            <p class="hint">Welcome to CyberKada</p>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <h1>Hello, we are CyberKada!</h1>
+
+        <!-- EMBEDDED VIDEO (moved here from Section 3) -->
+        <div class="card rv" style="--c: var(--ice)">
+          <!-- Put the embed link in data-embed, e.g. https://www.youtube.com/embed/VIDEO_ID -->
+            <div class="video" id="video" data-embed="https://youtu.be/MFbnEUSoSR4?si=1I6hpJGEQ3uAbpvI">
+            <div class="vposter">
+              <img src="img/Screenshot 2026-11-20 142925.png" alt="Thumbnail">
+            </div>
+            <button class="play" id="play" type="button" aria-label="Play the intro video">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12-7.5a1 1 0 0 0 0-1.72l-12-7.5A1 1 0 0 0 7 4.5z"/></svg>
+            </button>
+            <span class="vbadge">1 min 24 secs</span>
+          </div>
+          <div class="vcap">
+            <strong>CYBERKADA - 2026</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 1 · DETAILS OF COMPANY ============ -->
+  <section class="band" id="s1" style="--c: var(--sky)" aria-labelledby="h1-details">
+    <div class="wrap sec">
+      <div class="rail-col">
+        <div class="rail">
+          <div class="num">1</div>
+          <div>
+            <h2 id="h1-details">Details of Company</h2>
+            <p class="hint">Organizational commitment</p>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="tiles rv">
+          <article class="tile" style="--c: var(--sky)">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5l8-2v18M12 21h8V9l-8-2M8 9h.01M8 13h.01M8 17h.01M16 12h.01M16 16h.01"/></svg></span>
+            <span class="k">Company name</span>
+            <strong class="v">CyberKada</strong>
+          </article>
+          <article class="tile" style="--c: var(--violet)">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 13h18"/></svg></span>
+            <span class="k">Industry</span>
+            <strong class="v">Cybersecurity</strong>
+          </article>
+          <article class="tile" style="--c: var(--pink)">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg></span>
+            <span class="k">Founded</span>
+            <strong class="v">2026</strong>
+          </article>
+          <article class="tile" style="--c: var(--lime)">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.5 2.7-5.5 6-5.5s6 2 6 5.5"/><circle cx="17" cy="9" r="2.4"/><path d="M17.5 14.6c2.3.3 3.5 2 3.5 4.4"/></svg></span>
+            <span class="k">Team</span>
+            <strong class="v"><span data-count="5">5</span> members</strong>
+          </article>
+        </div>
+
+        <div class="card rv" style="--c: var(--sky)">
+          <p class="kicker">Discussion of organizational commitment</p>
+         <div class="acc">
+          <details open name="commitment" style="--c: var(--sky)">
+            <summary><span>Affective commitment</span></summary>
+            <div class="acc-body">
+              <p>
+                At CyberKada, this is reflected in the members' genuine interest in cybersecurity,
+                their enthusiasm for participating in organizational activities, and their shared
+                passion for making a positive impact in the digital community. Members remain engaged
+                because they value being part of the organization and believe in its mission.
+              </p>
+            </div>
+          </details>
+
+          <details name="commitment" style="--c: var(--violet)">
+            <summary><span>Continuance commitment</span></summary>
+            <div class="acc-body">
+              <p>
+                Within CyberKada, members recognize the value of the experiences, knowledge,
+                opportunities, relationships, and skills they gain through their involvement.
+                The responsibilities they undertake and the progress they contribute to encourage
+                them to remain committed and continue supporting the organization's initiatives.
+              </p>
+            </div>
+          </details>
+
+          <details name="commitment" style="--c: var(--pink)">
+            <summary><span>Normative commitment</span></summary>
+            <div class="acc-body">
+              <p>
+                At CyberKada, this is demonstrated through members' dedication to fulfilling
+                their assigned roles, supporting fellow members, and contributing to organizational
+                objectives. Members recognize their responsibilities and remain committed to upholding
+                the organization's values, maintaining teamwork, and fulfilling the trust placed in them.
+              </p>
+            </div>
+          </details>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- ============ 2 · ORGANIZATIONAL CHART ============ -->
+<section class="band" id="s2" style="--c: var(--violet)" aria-labelledby="h2-chart">
+  <div class="wrap sec">
+    <div class="rail-col">
+      <div class="rail">
+        <div class="num">2</div>
+        <div>
+          <h2 id="h2-chart">Organizational Chart</h2>
+          <p class="hint">SYSTEMS PERSPECTIVE</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="split">
+
+                <!-- FRAMEWORK DESCRIPTION (left) -->
+        <div class="card fw rv" style="--c: var(--violet)">
+          <p class="kicker">Chosen framework &amp; description</p>
+
+          <h3 class="fw-word">Systems Perspective</h3>
+
+          <p>
+            CyberKada adopts the Systems Perspective, viewing the
+            organization as an interconnected system where every
+            officer, committee, and member contributes to achieving
+            shared objectives.
+          </p>
+
+          <p>
+            Each position has its own responsibilities, but no
+            individual or committee operates independently.
+            Through effective communication, information-sharing,
+            collaboration, and feedback, all organizational
+            components work together to promote cybersecurity
+            awareness and responsible digital citizenship.
+          </p>
+
+          <p class="kicker">Key aspects of the framework</p>
+
+          <div class="chips">
+            <span class="tag">Systems Thinking</span>
+            <span class="tag">Interdependence</span>
+            <span class="tag">Feedback</span>
+            <span class="tag">Adaptability</span>
+          </div>
+
+          <p class="note">
+            The framework emphasizes that organizational success
+            depends on how effectively its members communicate,
+            coordinate, and contribute to the larger system.
+          </p>
+        </div>
+
+        <!-- ORGANIZATIONAL CHART PREVIEW (main highlight, right) -->
+        <div class="card chart-card rv" style="--c: var(--violet)">
+
+
+          <div class="seg" role="group" aria-label="Preview organizational systems">
+            <button type="button" data-variant="tree" aria-pressed="true">Structure</button>
+            <button type="button" data-variant="flat" aria-pressed="false">Communication</button>
+            <button type="button" data-variant="matrix" aria-pressed="false">Feedback</button>
+          </div>
+
+          <button class="zoom" type="button" data-zoom aria-label="Enlarge the chart preview">
+
+                        <svg class="orgsvg" id="orgsvg" data-active="tree"
+              viewBox="0 0 360 284"
+              role="img"
+              aria-label="CyberKada interconnected organizational system">
+
+              <!-- 1. STRUCTURE -->
+              <g data-v="tree">
+                <path class="ln"
+                  d="M180 44 V68
+                     M60 68 H300
+                     M60 68 V92 M180 68 V92 M300 68 V92
+                     M60 126 V150 M180 126 V150 M300 126 V150
+                     M60 184 V222 M180 184 V222 M300 184 V222
+                     M60 222 H300"/>
+
+                <g class="nd n-pink">
+                  <title>President</title>
+                  <rect x="125" y="10" width="110" height="34" rx="10"/>
+                  <text x="180" y="31">President</text>
+                </g>
+
+                <g class="nd n-violet">
+                  <rect x="12" y="92" width="96" height="34" rx="10"/>
+                  <text x="60" y="113">Vice Pres.</text>
+                </g>
+                <g class="nd n-sky">
+                  <rect x="132" y="92" width="96" height="34" rx="10"/>
+                  <text x="180" y="113">Secretary</text>
+                </g>
+                <g class="nd n-lime">
+                  <rect x="252" y="92" width="96" height="34" rx="10"/>
+                  <text x="300" y="113">Treasurer</text>
+                </g>
+
+                <g class="nd n-violet">
+                  <rect x="12" y="150" width="96" height="34" rx="10"/>
+                  <text x="60" y="171">Technical</text>
+                </g>
+                <g class="nd n-sky">
+                  <rect x="132" y="150" width="96" height="34" rx="10"/>
+                  <text x="180" y="171">Creatives</text>
+                </g>
+                <g class="nd n-lime">
+                  <rect x="252" y="150" width="96" height="34" rx="10"/>
+                  <text x="300" y="171">Events</text>
+                </g>
+
+                <g class="nd n-ice">
+                  <rect x="100" y="222" width="160" height="34" rx="11"/>
+                  <text x="180" y="243">Organization Members</text>
+                </g>
+
+                <text x="180" y="277" class="svg-note">
+                  Shared responsibility and coordination
+                </text>
+              </g>
+
+              <!-- 2. COMMUNICATION -->
+              <g data-v="flat">
+                <defs>
+                  <marker id="commArrow" markerWidth="6" markerHeight="6"
+                    refX="5" refY="3" orient="auto">
+                    <path d="M0 0 L6 3 L0 6" fill="none"
+                      stroke="currentColor" stroke-width="1"/>
+                  </marker>
+                </defs>
+
+                <g class="nd n-pink">
+                  <rect x="120" y="10" width="120" height="34" rx="10"/>
+                  <text x="180" y="31">Leadership</text>
+                </g>
+
+                <path class="ln" marker-end="url(#commArrow)"
+                  d="M180 44 V74
+                     M60 74 H300
+                     M60 74 V108
+                     M180 74 V108
+                     M300 74 V108"/>
+
+                <g class="nd n-violet">
+                  <rect x="12" y="108" width="96" height="34" rx="10"/>
+                  <text x="60" y="129">Technical</text>
+                </g>
+                <g class="nd n-sky">
+                  <rect x="132" y="108" width="96" height="34" rx="10"/>
+                  <text x="180" y="129">Creatives</text>
+                </g>
+                <g class="nd n-lime">
+                  <rect x="252" y="108" width="96" height="34" rx="10"/>
+                  <text x="300" y="129">Events</text>
+                </g>
+
+                <path class="ln" marker-end="url(#commArrow)"
+                  d="M108 125 H132
+                     M228 125 H252"/>
+
+                <path class="ln" marker-end="url(#commArrow)"
+                  d="M60 142 V186
+                     M180 142 V186
+                     M300 142 V186
+                     M60 186 H300
+                     M180 186 V212"/>
+
+                <g class="nd n-ice">
+                  <rect x="110" y="212" width="140" height="34" rx="11"/>
+                  <text x="180" y="233">Members</text>
+                </g>
+
+                <text x="180" y="270" class="svg-note">
+                  Information sharing and coordination
+                </text>
+              </g>
+
+              <!-- 3. FEEDBACK -->
+              <g data-v="matrix">
+                <g class="nd n-pink">
+                  <rect x="120" y="10" width="120" height="34" rx="10"/>
+                  <text x="180" y="31">CyberKada</text>
+                </g>
+
+                <path class="ln" d="M180 44 V70"/>
+
+                <g class="nd n-sky">
+                  <rect x="95" y="70" width="170" height="34" rx="10"/>
+                  <text x="180" y="91">Activities &amp; Projects</text>
+                </g>
+
+                <path class="ln" d="M180 104 V130"/>
+
+                <g class="nd n-lime">
+                  <rect x="95" y="130" width="170" height="34" rx="10"/>
+                  <text x="180" y="151">Evaluation</text>
+                </g>
+
+                <path class="ln" d="M180 164 V190"/>
+
+                <g class="nd n-violet">
+                  <rect x="95" y="190" width="170" height="34" rx="10"/>
+                  <text x="180" y="211">Feedback &amp; Suggestions</text>
+                </g>
+
+                <!-- feedback loop back to CyberKada -->
+                <path class="ln" d="M95 207 H34 V27 H120"/>
+                <path class="ln" d="M109 20 L120 27 L109 34"/>
+
+                <text x="180" y="256" class="svg-note">
+                  Continuous improvement and adaptation
+                </text>
+              </g>
+
+            </svg>
+          </button>
+
+          <p class="note" id="org-description">
+            CyberKada's officers, committees, and members work as
+            interconnected parts of one organizational system.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ============ 3 · THEORY & THEORIST ============ -->
+  <section class="band" id="s3" style="--c: var(--pink)" aria-labelledby="h3-theory">
+    <div class="wrap sec">
+      <div class="rail-col">
+        <div class="rail">
+          <div class="num">3</div>
+          <div>
+            <h2 id="h3-theory">Theory &amp; Theorist</h2>
+            <p class="hint">Basis of the company · </p>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="theory-grid">
+          <div class="card rv" style="--c: var(--pink)">
+            <div class="tcard">
+
+              <!-- Flip photo: front = theorist, back = second image -->
+              <div class="flip" id="flip" role="button" tabindex="0" aria-pressed="false"
+                   aria-label="Theorist photo. Press to flip and see the other image.">
+                <div class="flip-in">
+                  <div class="face front">
+                    <img src="img/renesis.jpg" alt="Photo of Rensis Likert">
+                  </div>
+                  <div class="face back photo">
+                    <img src="img/pdm diagram.jpg" alt="PDM Theory">
+                  </div>
+                  
+
+                </div>
+<button class="flip-zoom" id="flipZoom" type="button" aria-label="Enlarge the PDM diagram" tabindex="-1" style="position:absolute;right:10px;bottom:10px;z-index:4;margin:0;padding:3px 10px;border:0;border-radius:999px;background:var(--ink);color:var(--bg);font:600 11px var(--font-body);letter-spacing:.06em;line-height:1.5;opacity:0;pointer-events:none;transition:opacity .2s">Enlarge</button>                
+                <span class="flip-hint" id="flipHint" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/></svg>
+                  <span id="flipHintText">Tap to flip</span>
+                </span>
+              </div>
+
+              <div>
+
+                <!-- Paragraph switcher -->
+
+                <h5 class="fw-word-sm">Rensis Likert’s Participative Decision-Making (PDM) Theory</h5>
+
+                <p class="kicker"></p>
+
+
+                <div class="ttabs" role="tablist" aria-label="Theory sections">
+                  <button class="ttab" role="tab" id="tt-1" aria-controls="tp-1" aria-selected="true" type="button">Description of the theory</button>
+                  <button class="ttab" role="tab" id="tt-2" aria-controls="tp-2" aria-selected="false" tabindex="-1" type="button">Basis of the company</button>
+                  <button class="ttab" role="tab" id="tt-3" aria-controls="tp-3" aria-selected="false" tabindex="-1" type="button">Why we chose it</button>
+                </div>
+
+                <div class="tpanel" id="tp-1" role="tabpanel" aria-labelledby="tt-1">
+                  <p class="kicker">Description of the theory</p>
+                  <p>Rensis Likert’s Participative Decision-Making (PDM) Theory emphasizes the importance of involving employees and members in organizational decision-making. According to Likert, effective organizations are those where leaders recognize the value of their people, consider their opinions, and encourage them to participate in decisions that affect the organization. Rather than treating members as ordinary workers who simply follow instructions, this theory promotes trust, cooperation, open communication, and shared responsibility. It highlights that an organization becomes more productive and successful when its members feel valued and are given opportunities to contribute their ideas.</p>
+                </div>
+
+                <div class="tpanel" id="tp-2" role="tabpanel" aria-labelledby="tt-2" hidden>
+                  <p class="kicker">Basis of the company</p>
+                  <p>This theory relates to CyberKada because our organization promotes cybersecurity awareness, digital literacy, and responsible technology use through teamwork and collective efforts. Although each of our five members has a specific role and responsibility, every member contributes ideas, suggestions, and efforts toward achieving our common goals. For instance, when planning cybersecurity awareness campaigns, creating educational materials, or organizing activities, members can share their perspectives and participate in making decisions. Our organizational structure provides leadership and clear responsibilities while still allowing collaboration and communication among members. This reflects Likert’s idea that an organization’s success depends not only on its leaders but also on the active participation of its people.</p>
+                </div>
+
+                <div class="tpanel" id="tp-3" role="tabpanel" aria-labelledby="tt-3" hidden>
+                  <p class="kicker">Why we chose it</p>
+                  <p>We chose Rensis Likert’s Participative Decision-Making Theory because we believe that CyberKada cannot achieve its objectives through individual efforts alone. Since our organization focuses on educating and empowering people about cybersecurity, we also need to practice the values we promote within our own team. By listening to one another, respecting different opinions, and making decisions collaboratively, we can develop better ideas and accomplish our responsibilities more effectively. This theory represents the kind of organization we want CyberKada to be: one where leadership is supported by teamwork, every member has a voice, and everyone works together toward a common purpose.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ============ 4 · REFLECTION PAGE ============ -->
+  <section class="band" id="s4" style="--c: var(--lime)" aria-labelledby="h4-reflection">
+    <div class="wrap sec">
+      <div class="rail-col">
+        <div class="rail">
+          <div class="num">4</div>
+          <div>
+            <h2 id="h4-reflection">Reflection Page</h2>
+            <p class="hint">One page · 5 sentences each</p>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="card rv" style="--c: var(--lime)">
+
+          <div class="tabs" role="tablist" aria-label="Group members">
+            <button class="tab" role="tab" type="button" id="tab-beltran" aria-controls="panel-beltran" aria-selected="true" style="--c: var(--pink)"><i class="mini">B</i>Beltran</button>
+            <button class="tab" role="tab" type="button" id="tab-gevera" aria-controls="panel-gevera" aria-selected="false" tabindex="-1" style="--c: var(--lime)"><i class="mini">G</i>Gevera</button>
+            <button class="tab" role="tab" type="button" id="tab-mendiola" aria-controls="panel-mendiola" aria-selected="false" tabindex="-1" style="--c: var(--violet)"><i class="mini">M</i>Mendiola</button>
+            <button class="tab" role="tab" type="button" id="tab-paller" aria-controls="panel-paller" aria-selected="false" tabindex="-1" style="--c: var(--sky)"><i class="mini">P</i>Paller</button>
+            <button class="tab" role="tab" type="button" id="tab-pasion" aria-controls="panel-pasion" aria-selected="false" tabindex="-1" style="--c: var(--ice)"><i class="mini">P</i>Pasion</button>
+          </div>
+
+          <!-- ===== BELTRAN ===== -->
+          <div class="panel" role="tabpanel" id="panel-beltran" aria-labelledby="tab-beltran" style="--c: var(--pink)">
+            <div class="refl">
+              <figure class="rphoto">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/></svg>
+                <img src="img/Beltran.png" alt="Photo of Noella Mariz Beltran">
+              </figure>
+              <div class="rtext">
+                <div class="pan-head"><h3>Reflection by Beltran, Noella Mariz</h3></div>
+                <p>
+                  Through our Organizational Communication subject, I learned how important effective
+                  communication is in maintaining a well-organized and productive organization.
+                  I understood that communication is not just about sharing information but also
+                  about listening, understanding different perspectives, and working together toward
+                  a common goal. I also learned how different roles, responsibilities, and communication
+                  channels contribute to the success of a team. This subject helped me realize that
+                  misunderstandings can affect an organization's performance, which is why clarity, respect,
+                  and cooperation are essential. Overall, what I learned will help me become a better communicator
+                  and a more responsible team member in both my academic and future professional life.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== GEVERA ===== -->
+          <div class="panel" role="tabpanel" id="panel-gevera" aria-labelledby="tab-gevera" style="--c: var(--lime)" hidden>
+            <div class="refl">
+              <figure class="rphoto">
+                
+                
+                <img src="img/Dan.jpg" alt="Daniel Gevera">
+              </figure>
+              <div class="rtext">
+                <div class="pan-head"><h3>Reflection by Gevera, Daniel</h3></div>
+                <p>
+                  <!-- paste Gevera's reflection paragraph here -->
+                  Organizational Communication taught me that an organization can only function well when its members communicate clearly, honestly, and consistently. Working on CyberKada helped me see how each role, from leadership to the creative and technical teams, depends on shared information and coordination to reach common goals. I learned that good communication also means listening to feedback and being open to different ideas, since these help a team improve and adapt. This subject showed me that commitment grows when members feel valued, understand their responsibilities, and trust one another. Overall, what I learned will help me become a more cooperative and effective communicator in both my academic life and my future career.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== MENDIOLA ===== -->
+          <div class="panel" role="tabpanel" id="panel-mendiola" aria-labelledby="tab-mendiola" style="--c: var(--violet)" hidden>
+            <div class="refl">
+              <figure class="rphoto">
+                <img src="img/CJ.png" alt="Carl Justin Mendiola">
+              </figure>
+              <div class="rtext">
+                <div class="pan-head"><h3>Reflection by Mendiola, Carl Justin</h3></div>
+                <p>
+                   Through our Organizational Communication subject, I learned that good communication is important in making a team work better. While working on our CyberKada project, I realized that I cannot just focus on my own responsibilities because I also need to consider my groupmates and how our work connects with one another. I learned that sharing ideas, listening to different opinions, and helping each other make decisions can make it easier for us to reach our goals. It also made me realize that I still have room to improve when it comes to expressing my thoughts and communicating with others. Overall, this subject taught me to be more open, responsible, and cooperative, which I know will help me in future school projects and in my career.
+                  </p>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== PALLER ===== -->
+          <div class="panel" role="tabpanel" id="panel-paller" aria-labelledby="tab-paller" style="--c: var(--sky)" hidden>
+            <div class="refl">
+              <figure class="rphoto">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/></svg>
+                 <img src="img/Paller.jpg" alt="Photo of Zither Alphonsus Paller">
+              </figure>
+              <div class="rtext">
+                <div class="pan-head"><h3>Reflection by Paller, Zither Alphonsus</h3></div>
+                <p>
+                  <!-- paste Paller's reflection paragraph here -->
+                  Through Organizational Communication, I learned that communication is the thread that holds an organization together, and that it involves listening and giving feedback as much as sharing information. Building CyberKada with my groupmates showed me how the Systems Perspective works in practice, because every officer, committee, and member depends on the others to get things done. I also came to understand that commitment comes in different forms, whether it is genuine interest in the cause, the value of what we gain from staying, or the responsibility we feel toward our teammates. Working on this project taught me that unclear messages and unshared updates can slow down a team, while respect and open discussion help it move forward. Overall, this subject has prepared me to be a clearer communicator and a more dependable team member, both in my studies and in my future career in the field of technology.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== PASION ===== -->
+          <div class="panel" role="tabpanel" id="panel-pasion" aria-labelledby="tab-pasion" style="--c: var(--ice)" hidden>
+            <div class="refl">
+              <figure class="rphoto">
+                <img src="img/Hans.jpg" alt="Hans Pasion">
+              </figure>
+              <div class="rtext">
+                <div class="pan-head"><h3>Reflection by Pasion, Hans Philip</h3></div>
+                <p>
+                  <!-- paste Pasion's reflection paragraph here -->
+                  Through Organizational Communication, I realized how important communication is in building a successful and organized team. Being part of CyberKada with my groupmates helped me understand that teamwork is not only about completing tasks but also about supporting one another and taking responsibility. I learned that every member has a role to fulfill, and cooperation makes it easier to achieve our common goals. I also realized that listening to others, respecting different opinions, and giving clear updates can prevent misunderstandings and improve our teamwork. This experience taught me that commitment, trust, and open communication are important in maintaining a strong organization. Overall, this subject helped me improve how I communicate and work with others, which I can apply not only in my studies but also in my future career.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5 · INFORMATION OF COMPANY ============ -->
+  <section class="band" id="s5" style="--c: var(--ice)" aria-labelledby="h5-info">
+    <div class="wrap sec">
+      <div class="rail-col">
+        <div class="rail">
+          <div class="num">5</div>
+          <div>
+            <h2 id="h5-info">Information of Company</h2>
+            <p class="hint">Where to find us</p>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="split">
+          <div class="card rv" style="--c: var(--ice)">
+            <ul class="clist">
+              <li>
+                <span class="ico" style="--c: var(--pink)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+                <div><p class="kicker">Address</p><p class="val ph-text" id="addr">JP Rizal Extension, West Rembo, 1644 City of Taguig, Metro Manila, Philippines</p></div>
+                <button class="copy" type="button" data-copy="#addr">Copy</button>
+              </li>
+              <li>
+                <span class="ico" style="--c: var(--sky)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7.5 12 13l8.5-5.5"/></svg></span>
+                <div><p class="kicker">Email</p><p class="val ph-text" id="mail">cyberkada2026@email.com</p></div>
+                <button class="copy" type="button" data-copy="#mail">Copy</button>
+              </li>
+              <li>
+                <span class="ico" style="--c: var(--lime)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+                <div><p class="kicker">Phone</p><p class="val ph-text" id="tel">+63 000 000 0000</p></div>
+                <button class="copy" type="button" data-copy="#tel">Copy</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card rv map-card" style="--c: var(--ice); position:relative; padding:0; overflow:hidden; min-height:340px;">
+  <iframe
+    title="Map of University of Makati"
+    src="https://www.google.com/maps?q=University+of+Makati,+JP+Rizal+Extension,+West+Rembo,+Taguig&output=embed"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen
+    style="position:absolute; inset:0; width:100%; height:100%; border:0;">
+  </iframe>
+
+  <p class="note" style="position:absolute; left:12px; right:12px; bottom:12px; margin:0; padding:8px 12px; border-radius:12px; font-size:.85rem; background:rgba(10,25,50,.85); pointer-events:none;">
+    University of Makati, JP Rizal Extension, West Rembo, Taguig
+  </p>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="sline" aria-hidden="true"></div>
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <img src="umak-logo.png" alt="" width="46" height="46">
+      <span>Organizational Communication · 2-ACSAD</span>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#s1">Details</a>
+      <a href="#s2">Org chart</a>
+      <a href="#s3">Theory</a>
+      <a href="#s4">Reflection</a>
+      <a href="#s5">Info</a>
+    </nav>
+    <button class="totop" id="top" type="button">Back to top</button>
+  </div>
+  <div class="wrap fine">
+    <span>© 2026 CYBERKADA · Gevera, Paller, Pasion, Beltran, Mendiola</span>
+    <span>The University of Makati seal is a registered trademark of the University of Makati.</span>
+  </div>
+</footer>
+
+<button class="theme" id="theme" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<dialog class="lb" id="lb" aria-label="Enlarged view">
+  <div class="lb-body" id="lb-body"></div>
+  <button class="lb-x" id="lb-x" type="button" aria-label="Close enlarged view">×</button>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
+
